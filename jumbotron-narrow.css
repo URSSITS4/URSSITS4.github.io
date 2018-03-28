@@ -1,0 +1,177 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+
+
+/* Space out content a bit */
+body{
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.middle {
+  font-family: 'Roboto', sans-serif;
+font-weight: 400 !important;
+}
+audio {
+   display:none;
+}
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.btn-pay{
+  background-color: black;
+  color:#ffffff !important;
+  border: none;
+}
+.btn-pay:focus span {display:none}
+.btn-pay:focus:before {content:"✓"}
+
+/* Custom page header */
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  background-image:url(images/flag.png);
+  background-size: cover;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+    color:white;
+  }
+}
+
+.btn-group-vertical > button{
+    padding-right:10px;
+}
+.month-div{
+  padding : 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  background-color: #d31313;
+  color : white;
+}
+.subheading{
+  border-width: thin;
+  border-radius: 5px;
+}
+.articles {
+  padding-left: 30px;
+}
+.presentation{
+     background-color: #a687db;
+}
+
+
+.nav-pills > li > a {
+  font-size: 15px;
+}
+
+ul.nav li a, ul.nav li a:visited {
+    color: #303030 !important;
+}
+
+ul.nav li a:hover, ul.nav li a:active {
+    color: #303030!important;
+}
+
+ul.nav li.active a {
+    color: #303030 !important;
+}
+
+.label{
+  display: inline-block;
+}
+.btn-margin{
+  margin-top: 10px;
+}
+.badge-error {
+  background-color: #b94a48;
+}
+.date{
+  text-decoration:underline;
+}
+.block{
+  display: block;
+   width: 100%;
+   border: none;
+   text-align: center;
+}
+.btn-jumbotron{
+  border: none;
+}
+.img-cart{
+    height: 150px;
+}
+.mute {
+color: #000 !important;
+}
+.no_underline_no_color {
+color: #000 !important;
+text-decoration: none;
+}
+.no_underline_no_color:hover{
+  text-decoration: none;
+}
+.produits{
+  pointer-events:none;
+}

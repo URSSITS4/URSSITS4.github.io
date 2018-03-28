@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type= "text/css" href="style.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+ -->
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link href="jumbotron-narrow.css" rel="stylesheet">
+<title>URSSI</title>
+
+<!-- Si OCTAVE s'amuse à aller regarder mon code :
+.......```````     ``````             ```          ``                 `   `````  ```````````.....---
+........````````` `                      ``                             `  `````````````````....----
+..-.--....-----:--..`````                 ``                                ````````````````...-----
+.....-.-:/oossyyso//:---...```````         ``                              ````````````````...------
+.....--+syyhdddddddhssysyysoo+/:-..`..``    `                      ``      ``````.`````````.....----
+....-:oyyhdddhhhdddmmdhhddhhhyss+//:-:-.`  ``     `               ```````` ````````````````.....----
+..../syyyys+:://:/oshmmmmmdmmdhyyoo+/::-.````    ```             `````````````````````````......----
+...-+ooo+/:-...----:/+syddmmmmhhyyo++/::-.````    .``  ` ```     `````````  ````` ````````......----
+..-:++/:-.......-:::///+ossyyhhyyyyso///-..```    ..`````....````````````````````````````......-----
+..-/+/-......--:/++ossssssssssssssyysoo+:-...`````.--...:---::-------------------::/::-.....--------
+---//--...--:/+osyyhhhhhddddyssossssoooo/:-..````..--://+/++osooossooooooo+oooooosssyssso+/:--------
+---::----::/+syso/++o+o+o+osyyyssssssooo+/:.......-::/oossyyhddddddhhhhhhhyyhhyyyyyyyyyyssys+/::::::
+:::////++oossyysssyhdddddddddddhhyysssooo+/-......-:+osyyyyyhddmmmmmmmmdddddddhhyysyyhhhhhhyysssooo+
+ddmddhhyyssyyssss/::://++///+osssssyyhhyysoo/-----:/+shhyyhhhhhhhhhhhhhhddddddhhhhhhhyyssosssssdNNNN
+MNo//:-::/+oooso-` `-//+//:`.:+oo++++/++odNNNmmmmmdddmNMdyysssyhddddhhhddmmdddyooyhddhys+++///::sMMM
+Ms-::::::/+++++:` `//+ydy+//``-/oo++/:-::-mMMNMNNNNMMMNm+ssssyyhhddhhyhdhNmhyyh-.-/osysso/:::---:NMM
+M/::---:://///-..``+o/shy///``.-::-:-..``.dMMmy+//+odNMh+oooosyyhdhhysyhydmdyys.`.:/++++//:-----:dMM
+M:/:-----:::/+/::---+/+++//---::--.......-NNm:`     `oNNo++++ooossyssoosssssss//////+/://:----:::dMM
+M///:-...---:/++++++++////++++//:::::-..-+MN:        `sNh:::::////++++++//////////++/::::-----:::dMN
+M+///:-....--::/+oooooo++++///::-----...-dN+`         `yN/----:::--::://////::::::///:::::----:::NMs
+My-//::--.....--:://///:::--------......+No`          `.yh-....-----..-------------------:::::::/Mm:
+mN-:///:::--........----..-----..````..:ms``          ``.ds..```.......-....`````````..----::--.yMo-
+oNh.-:/:::---........--:----...`````../ms````         ```-hy-`````````.........``````...-----.`+Nd--
+-+mho/:------...............`````.--+hmo`````        `````.ymy/-..``````````......````..--:/+sddo---
+:--/oyhhhyyssoooo++++ooosssyyhhddhyyys:`````         ```````:osyyyyhhhyyyssssssssyyyyyyyysso+:-..---
+::-------:::////////////::--.....-:++-```````         ```.````-://:-.....--------..`````````.....---
+::-----.-----..````````````..--:::::.```````           ``..``````.--::::--....````````````......----
+/:--------.-....``````...--------..`````````           ```.```````  ````...----................-----
+::::--------.................````````.`````             ``..`.```        ```````.....--.-...-.------
+/::::-:---:-------...```````   ````````````             ```.``````            ````````........-.----
+/::::--:::::-----..`````         `````````              ```..```````            ```````....--.------
++/:::-:/::-----...```           ```.......```           ``...`````````           ``````-....-..-----
+s/::-:-:-----.....``````       ```.--:::/::-......````..---......```````  `     ```````.....-...----
+h+/::--------.....```````` ``````..:/osyhys////:::---:/++oo+/:--.`````````     ```````..........--::
+dyo/:---.--..--...````````````````../sydddhssssoo+////+++ooss+:-.``````````` ` ```````........---://
+mhs+:----------....````````````````..:+oooossyysso+///:://://:-....```````````````````....----.-::++
+mdys/::-------......```````````````...:/+osyyhhyysoo+++osyyso/:--....`.```````````````..---.---:/++s
+mmdho/::--..---.....````````````..---/osyyhyyyossoyysyyyhdhhhyo++:--:---..`````````.....-------:/soy
+NNmho+/:/:----...-..``````....----:/+syyshhssssoshmmdhhhddhdddyss+//://::--....`````.-..---:::///osy
+NmNhyo+++:--------...``..--://///+osysyyydhhhysyhmNNNdddmmddhdhdys++oo+o++///::.````.-:--:+++/+o+osy
+NNNdhso++/-:::----.....-:/++oo+ossyyyhhhdddmmdhhmmNmmddmmmmmdhdmyyysyyyyysssss+/-```.-::/:+oyoosyoos
+NNNmdyyso//+/:----...-://oosssssyyydhhhhdddmmmmmddmNmdmmmddhdhhdyysyyhhhhhdhyhso/-.`.-:/+++oyyyyyysy
+MNNmmdhhssos+/::--..:/++ohyyhyyyyhyhhyoyyhhhhddhyssyyyyhysssysysooosshhdmdddhdyyo+-..-:+syyyyyhhhhyh
+MMNNmdhdhhyso/+::---+ooohmddhhddddhysysysyyyyyyssoooooooo+++++++++oosyhdmmmmmmdyyo/---:/ohdmyyyddhhd
+MMMNNNdmdmdysos//:-/ossshhdddmmmmmddhhysoo+//:-------..............-::/+oshhdddyys+--:++sydmmdhddshd
+MMNNNNNmdddyhhyo+:::+oyshhddmmmhhys+/:-----........................--....-/+osyhso+:/:+sydddmmmmhyhm
+MMNNNNmmmmmdmmdy+::/+oosyyhyso+::----..----:::////:::/+/+///:::---........-/oshhys+oooosddddmmmmddmN
+MMMNNNNNmmmmNNdss/::+++ssoo/:-......-----:::/+o/+++/++sossooo+//:---..---:/oshdddyyydsyhddmmNmmmmmNN
+MMMMMMNNNNmmNNdsyo+/osssso/::-.-------://+++oosysyyyhyhhyhyyhy++//:-:-://+osshdmmdddmhhdmNNmNNNdmmNN
+MMMMMMMMNNNNNmdhdhysyhyhyo+/::::::::--:/oooooyyyhdddmdhdyhhyyyso+//:::/ooyhyhdmmmmdmddmmmNNNNNNmNNNM
+MMMMMMMMMMNNNmmmNmdhhhhhyso++////::::::/oooyyhhdddddmdhhyyysoooo/////+osyhdmdmddmNddyhNNNNNNNNNNNMMM
+
+SALUT !
+
+-->
+</head>
+<body>
+  <audio controls autoplay loop id='ambiance'>
+    <source src="sound\anthem.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+  <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" ><a href="shop.html">Boutique</a></li>
+            <li role="presentation"><a href="contact.html">Contact</a></li>
+          <!--<li role="presentation"> <a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span><span class="badge badge-error">1</span></a></li>-->
+            <li role="presentation"><a class="mute"href="#" onclick="document.getElementById('ambiance').muted = true; return false">
+                 <span class="glyphicon glyphicon-volume-off" aria-hidden="true"></span>
+            </a></li>
+          </ul>
+        </nav>
+        <h3><b><a class="no_underline_no_color" href="index.html"> URSSI</b></a></h3>
+      </div>
+<div class="middle">
+      <div class="month-div">
+            <h4 class="text-center">🔥 ☭ Edition limitée ☭ 🔥 </h4>
+          </div>
+  <div class="jumbotron">
+        <h1>Accessoires officiels disponibles!</h1>
+        <p class="date">28 mars 2018</p>
+        <p class="lead">Commandez vite vos produits URSSI</p>
+        <p><a class="btn btn-lg btn-default btn-jumbotron" href="shop.html" role="button">Découvrir ></a></p>
+      </div>
+
+
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+              <img src="images/urssi_grey_shirt_f.jpg" alt="...">
+            <div class="caption">
+              <h5 class="text-center">♀W T-shirt URSSI gris</h5>
+
+              <p class="text-center"><a href="#" class="btn btn-primary btn-pay produits" role="button"><span>10€</span></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+              <img src="images/urssi_coal_shirt_f.jpg" alt="...">
+            <div class="caption">
+              <h5 class="text-center">♀W T-shirt URSSI charbon</h5>
+
+              <p class="text-center"><a href="#" class="btn btn-primary btn-pay produits" role="button"><span>10€</span></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+              <img src="images/urssi_black_shirt_f.jpg" alt="...">
+            <div class="caption">
+              <h5 class="text-center">♀W T-shirt URSSI noir</h5>
+
+              <p class="text-center"><a href="#" class="btn btn-primary btn-pay produits" role="button"><span>10€</span></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="jumbotron">
+            <h1>Encore plus d'accessoires !</h1>
+            <p class="lead">Découvrez la game Profs de la TS4™</p>
+            <p><a class="btn btn-lg btn-warning" href="profs.html" role="button">Je fonce ></a></p>
+          </div>
+</body>
+</html>
